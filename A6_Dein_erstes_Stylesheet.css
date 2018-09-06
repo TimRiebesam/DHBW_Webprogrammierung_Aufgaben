@@ -1,0 +1,45 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: "calibri";
+}
+
+header{
+    background-color: rgb(22, 177, 198);
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+main{
+    padding: 0.5em;
+
+}
+
+h2 {
+    color: rgb(17, 96, 107);
+}
+
+.album{
+    border: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 30em;
+    color: rgba(25, 25, 25);
+}
+
+.album > .icon{
+    font-size: 330%;
+    display: inline-block;
+}
+
+.album .title{
+    font-weight: bold;
+}
+
+.album > .description{
+    display: inline-block;
+    margin-left: 0.5em;
+}
