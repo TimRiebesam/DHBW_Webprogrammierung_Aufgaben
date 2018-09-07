@@ -6,6 +6,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
 }
 
 /** Allgemeine Schrifteinstellungen **/
@@ -20,11 +22,16 @@ html {
 header {
     padding: 0em 1em 0em 1em;
     font-variant: small-caps;
-
+    background: rgb(235, 235, 235);
     display: flex;
     justify-content : space-between;
     align-content: center;
     align-items: center;
+    border-bottom: 2px solid #a8aeb1;
+}
+
+header > img {
+    max-height: 3em;
 }
 
 /** Hauptbereich **/
@@ -36,11 +43,14 @@ main > aside > img {
     border: 1px solid #707070;
     padding: 0.2em;
     background: #eaeaea;
+    width: 10em;
+    height: 10em;   
+    float: right;
 }
 
 main > aside > h2 {
     text-align: center;
     margin: 2em 0 2em 0;
     color: rgb(120, 120, 120);
-    font-weight: normal;
+    font-weight: normal;   
 }

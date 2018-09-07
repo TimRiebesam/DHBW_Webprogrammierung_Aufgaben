@@ -8,3 +8,10 @@
  *   4) Verwenden Sie eine Schriftgröße für <html> in der Einheit vmin, damit
  *      die Schrift mit dem Browserfenster größer wird.
  */
+@media only screen and (min-width: 40em){
+    nav{
+        border-bottom: 0;
+        border-left: 1px;
+    }
+}
+    
