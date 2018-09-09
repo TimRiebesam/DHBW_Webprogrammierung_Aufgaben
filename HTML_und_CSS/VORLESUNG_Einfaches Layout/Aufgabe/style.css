@@ -8,6 +8,8 @@ body {
     padding: 0;
     background-image: url(img/bg.jpg);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /** Allgemeine Schrifteinstellungen **/
@@ -39,13 +41,17 @@ main {
     padding: 1em;
 }
 
+main > aside {
+    float: right;
+    text-align: right;
+}
+
 main > aside > img {
     border: 1px solid #707070;
     padding: 0.2em;
     background: #eaeaea;
     width: 10em;
     height: 10em;   
-    float: right;
 }
 
 main > aside > h2 {
