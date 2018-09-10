@@ -1,0 +1,36 @@
+*{
+    font-family: "Moon 2.0";
+}
+
+header{
+    background-color: lightblue;
+    border: 2px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    background-color: lightgreen;
+    border: 2px solid;
+}
+
+main > div{
+    border: 1px solid;
+    padding: 3px;
+    margin: 0.9%;
+    text-align: center;
+}
+
+.c1{
+    display: inline-block;
+    width: 30%;
+}
+
+.c3{
+    display: inline-block;
+    width: 30%;
+}
+
+#d6{
+    float: right;
+}
