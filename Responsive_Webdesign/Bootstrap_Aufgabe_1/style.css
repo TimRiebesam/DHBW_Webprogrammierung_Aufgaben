@@ -1,0 +1,32 @@
+html{
+    font-family: calibri;
+    font-size: 18pt;
+    color: white;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    color: crimson;
+}
+
+.text{
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+#f1{
+    background-color: #880033;
+}
+
+#f2{
+    background-color: #005987;
+}
+
+#f3{
+    background-color: #1B8D68;
+}

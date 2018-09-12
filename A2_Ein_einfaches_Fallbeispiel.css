@@ -1,0 +1,31 @@
+@media (min-width: 50em) {
+    html {
+        background-image: url("https://unsplash.it/1024/768/?random");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    main {
+        width: 40em;
+        margin: 0 auto;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-color: white;
+        border: 2px solid darkgray;
+        padding: 1em;
+    }
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+    color: crimson;
+}
+
+main {
+    text-align: center;
+}
