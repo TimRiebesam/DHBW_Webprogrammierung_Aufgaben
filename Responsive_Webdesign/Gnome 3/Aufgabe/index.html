@@ -8,9 +8,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Socicon: Social Media Icons (www.socicon.com) -->
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
@@ -22,7 +22,7 @@
 
 <body>
     <!-- Navigationsleiste -->
-    <nav class="my-navbar navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
         <a class="navbar-brand" href="#"><img src="img/gnome-logo.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 karussell">
-                    <img src="https://www.gnome.org/wp-content/uploads/2010/09/activities-overview.jpg" alt="">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/simple-to-use.png" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Simple and easy to use</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/get-things-done.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Helps you get things done</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/you-in-control.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>
+                                        Puts you in control</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/finely-crafted.png" alt="Fourth slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Finely crafted</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/easy-access.png" alt="Fith slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Easily access all your data</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Voheriges</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Nächstes</span>
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <div class="row">
@@ -97,7 +148,7 @@
             </div>
             <hr>
             <div class="row list">
-                <div class="col-md-5">
+                <div class="col-md-5 conImage">
                     <img src="img/you-in-control.png" alt="">
                 </div>
                 <div class="col md-7 conImage">
@@ -107,7 +158,7 @@
             </div>
             <hr>
             <div class="row list">
-                <div class="col-md-7">
+                <div class="col-md-7 conImage">
                     <h4>Finely crafted</h4>
                     Every aspect of GNOME 3 has been crafted to fit together as a harmonious whole, so that it offers a consistent and integrated experience. We have paid a huge amount of attention to detail, resulting in a smooth and polished product that is satisfying to use and beautiful to behold.
                 </div>
@@ -117,7 +168,7 @@
             </div>
             <hr>
             <div class="row list">
-                <div class="col-md-5">
+                <div class="col-md-5 conImage">
                     <img src="img/easy-access.png" alt="">
                 </div>
                 <div class="col md-7 conImage">
@@ -142,18 +193,80 @@
 
     <!-- Fußbereich mit weiteren Links -->
     <footer>
-        <a href="#">
-            <span class="socicon-rss"></span>
-        </a>
-        <a href="#">
-            <span class="socicon-facebook"></span>
-        </a>
-        <a href="#">
-            <span class="socicon-twitter"></span>
-        </a>
-        <a href="#">
-            <span class="socicon-googleplus"></span>
-        </a>
+        <div class="container">
+            <div class="row ftRow">
+                <div class="col-md-3">
+                    <a href=""><b>The GNOME Project</b></a>
+                </div>
+                <div class="col-md-3">
+                    <a href=""><b>Resources</b></a>
+                </div>
+                <div class="col-md-3">
+                    <a href=""><b>News</b></a>
+                </div>
+                <div class="col-md-3 ftLogos">
+                    <a href=""> <a href="#">
+                            <span class="socicon-rss"></span>
+                        </a>
+                        <a href="#">
+                            <span class="socicon-facebook"></span>
+                        </a>
+                        <a href="#">
+                            <span class="socicon-twitter"></span>
+                        </a>
+                        <a href="#">
+                            <span class="socicon-googleplus"></span>
+                        </a></a>
+                </div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3">
+                    <a href="">About Us</a>
+                </div>
+                <div class="col-md-3"><a href="">Developer Center</a></div>
+                <div class="col-md-3"><a href="">Press Releases</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">Get Involved</a></div>
+                <div class="col-md-3">Documentation<a href=""></a></div>
+                <div class="col-md-3">Latest Release<a href=""></a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">Support GNOME</a></div>
+                <div class="col-md-3"><a href="">Wiki</a></div>
+                <div class="col-md-3"><a href="">Planet GNOME</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">Merchandise</a></div>
+                <div class="col-md-3"><a href="">Mailing Lists</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">Contact Us</a></div>
+                <div class="col-md-3"><a href="">IRC Channels</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">The GNOME Foundation</a></div>
+                <div class="col-md-3"><a href="">Bug Tracker</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href="">Privacy</a></div>
+                <div class="col-md-3"><a href="">Developement Code</a></div>
+            </div>
+            <div class="row ftRow">
+                <div class="col-md-3"><a href=""></a></div>
+                <div class="col-md-3"><a href=""></a></div>
+            </div>
+            <div class="row ftRow"></div>
+            <div class="row ftRow">
+                <div class="col-md-12">
+                    © <b>The GNOME Project</b>
+                </div>
+                <div class="col-md-12 cc">
+                    Free to share and remix: <a href="">Creative Commons CC-BY</a>. Optimized for standards. Hosted by <a href="">Red Hat</a>. Powered by <a href="">WordPress</a>.
+                </div>
+                <div class="clearSmall"></div>
+            </div>
+        </div>
     </footer>
 </body>
 
