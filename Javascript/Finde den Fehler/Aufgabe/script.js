@@ -48,7 +48,7 @@ initGame = () => {
 
     ];
 
-    let cardImages = document.querySelectorAll("#card > img");
+    let cardImages = document.querySelectorAll("#cards > img");
 
     cardImages.forEach(cardImage => {
         cardImage.src = backsideUrl;
@@ -100,8 +100,8 @@ let onCardClicked = (event) => {
     // Karte anzeigen, wenn sie noch nicht offen ist, sonst zuklappen.
     // Danach die Karte merken, oder wenn schon eine Karte offen liegt,
     // die beiden Karten miteinander vergleichen.
-    compareCards(card);
     flipCard(card);
+    compareCards(card);
     restartGameIfWon();
 }
 
