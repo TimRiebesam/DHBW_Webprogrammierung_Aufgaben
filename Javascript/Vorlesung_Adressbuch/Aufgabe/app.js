@@ -32,6 +32,35 @@ class App {
             },
 
             // TODO: Füge hier ein paar weitere Adressen hinzu, damit du genügend Testdaten hast
+
+            {
+                first_name: "Tim",
+                last_name: "Riebesam",
+                phone: "+49 157 38167526",
+                email: "tim.riebesam@aol.de",
+            },
+
+            {
+                first_name: "Raphael",
+                last_name: "Menken",
+                phone: "+49 123 45678",
+                email: "raph.menki@mail.de",
+            },
+
+            {
+                first_name: "Nicolas",
+                last_name: "Neuhof",
+                phone: "+49 987 654321",
+                email: "niggo.niggo@mail.de",
+            },
+
+            {
+                first_name: "Marcel",
+                last_name: "Jacob",
+                phone: "+49 938 830800",
+                email: "marcel.jacob@mail.de",
+            },
+
         ];
 
         // Interne Methode zum Rendern des Menüs aufrufen
@@ -87,11 +116,13 @@ class App {
         // Aktuelle Seite ausblenden
         if (this._currentPageObject != null) {
             // TODO: Methode zum Ausblenden der aktuellen Seite aufrufen
+            this._currentPageObject.hide();
         }
 
         // Neue Seite anzeigen und merken
         this._currentPageObject = new newPage.klass(this, name, editIndex);
         // TODO: Methode zum Anzeigen der aktuellen Seite aufrufen
+        this._currentPageObject.show();
 
         // Aktuelle Seite im Kopfbereich hervorheben
         document.querySelectorAll("#app-menu li").forEach(li => li.classList.remove("active"));

@@ -23,6 +23,7 @@ class PageList {
     show() {
         this._renderList();
         // TODO: Dem Hauptelement #main-page-list die CSS-Klasse "hidden" wegnehmen
+        this._mainElement.classList.remove("hidden");
     }
 
     /**
@@ -30,6 +31,7 @@ class PageList {
      */
     hide() {
         // TODO: Dem Hauptelement #main-page-list die CSS-Klasse "hidden" hinzufügen
+       this._mainElement.classList.add("hidden");
     }
 
     /**
@@ -45,6 +47,11 @@ class PageList {
 
         if (data.length < 1) {
             // TODO: Inhalt aus dem Template #template-page-list-empty anzeigen
+
+            let templateEmpty = document.getElementById("template-page-list-empty").innerHTML;
+            ol.innerHTML = templateEmpty;
+            return;
+
             // und Methode beenden, wenn in der Liste keine Daten vorhanden sind
         }
 
@@ -60,6 +67,15 @@ class PageList {
             let dummy = document.createElement("div");
 
             // TODO: Inhalt des Templates #template-page-list-li anzeigen und
+
+            dummy.innerHTML = template;
+
+            dummy.innerHTML = dummy.innerHTML.replace("$INDEX$", index);
+            dummy.innerHTML = dummy.innerHTML.replace("$LAST_NAME$", dataset.last_name);
+            dummy.innerHTML = dummy.innerHTML.replace("$FIRST_NAME$", dataset.first_name);
+            dummy.innerHTML = dummy.innerHTML.replace("$PHONE$", dataset.phone);
+            dummy.innerHTML = dummy.innerHTML.replace("$EMAIL$", dataset.email);
+
             // dabei die Platzhalter mit den anzuzeigenden Werten ersetzen
 
             /* Innere Funktion, damit den Event Listenern eine Kopie(!!) von
