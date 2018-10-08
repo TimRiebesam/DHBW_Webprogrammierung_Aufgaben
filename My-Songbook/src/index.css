@@ -1,0 +1,21 @@
+/*
+ * Dieses Stylesheet enthält nur allgemeine Anweisungen, die sich auf die
+ * gesamte App auswirken. Hier dürfen keine Änderungen vorgenommen werden,
+ * die sich nur auf bestimmte Bereiche der Anwendung auswirken sollen.
+ *
+ * Damit @import funktioniert, muss die Anweisung vor allen anderen
+ * CSS-Anweisungen stehen. Dieses Stylesheet muss daher auch vor allen
+ * anderen importiert werden.
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+
+    background-color: rgb(212, 227, 237);
+}
